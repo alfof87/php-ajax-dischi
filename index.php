@@ -4,16 +4,17 @@
   // echo count($data["response"]);
 
   $dataResponse = $data["response"];
-  echo $dataResponse;
-  echo count($dataResponse);
+  // echo $dataResponse;
+  // echo count($dataResponse);
 
   foreach ($dataResponse as $arr) {
-    echo $arr["poster"] . "<br>";
-    echo $arr["title"] . "<br>";
-    echo $arr["author"] . "<br>";
-    echo $arr["genre"] . "<br>";
-    echo $arr["year"] . "<br>";
-    echo "<br><br>";
+     ?><p><?php echo $arr["poster"];?></p> <?php;
+     ?><h4><?php echo $arr["title"];?></h4> <?php;
+     ?><h5><?php echo $arr["author"];?></h5> <?php;
+     ?><h5><?php echo $arr["genre"];?></h5> <?php;
+     ?><h5><?php echo $arr["year"];?></h5> <?php;
+     echo "<br><br>";
+
   }
 
  ?>
