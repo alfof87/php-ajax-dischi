@@ -1,5 +1,5 @@
 <?php
-  include 'vars.php';
+  include "vars.php";
   // echo $data["response"]["title"];
   // echo count($data["response"]);
 
@@ -12,9 +12,8 @@
      ?><h4><?php echo $arr["title"];?></h4> <?php;
      ?><h5><?php echo $arr["author"];?></h5> <?php;
      ?><h5><?php echo $arr["genre"];?></h5> <?php;
-     ?><h5><?php echo $arr["year"];?></h5> <?php;
+     ?><h6><?php echo $arr["year"];?></h6> <?php;
      echo "<br><br>";
-
   }
 
  ?>
