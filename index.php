@@ -19,9 +19,13 @@
     foreach ($dataResponse as $arr) {
       ?><div id="container">
         <p><?php echo $arr["poster"];?></p> <?php;
+        echo "<br>";
         ?><h4><?php echo $arr["title"];?></h4> <?php;
+        echo "<br>";
         ?><h5><?php echo $arr["author"];?></h5> <?php;
+        echo "<br>";
         ?><h5><?php echo $arr["genre"];?></h5> <?php;
+        echo "<br>";
         ?><h6><?php echo $arr["year"];?></h6> <?php;
         echo "<br><br>";
       ?></div><?php;
