@@ -18,19 +18,30 @@ function getData(){
     }
   });
 }
-function printData(data){
-  console.log(data);
-  var template = $("#disk-template").html();
-  var compiled = Handlebars.compile(template);
-  var target = $("#disk ul");
-  for (var i = 0; i < data.length; i++) {
-    var cd = data[i];
-    var diskHTML = compiled(disk);
-    target.append(diskHTML);
-
-  }
-  }
-
+// function printData(data){
+//   console.log(data);
+//   var template = $("#disk-template").html();
+//   var compiled = Handlebars.compile(template);
+//   var target = $("#disk ul");
+//   for (var i = 0; i < data.length; i++) {
+//     var cd = data[i];
+//     var diskHTML = compiled(disk);
+//     target.append(diskHTML);
+//
+//   }
+//   }
+  function printData(data){
+    console.log(data);
+    var template = $("#disk-template").html();
+    var compiled = Handlebars.compile(template);
+    var target = $("main");
+    for (var i = 0; i < data.length; i++) {
+      var cd = data[i];
+      // console.log(data[i]);
+      var diskHTML = compiled(cd);
+      target.append(diskHTML);
+    }
+    }
 
 
 

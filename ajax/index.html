@@ -10,18 +10,16 @@
   </head>
   <body>
     <script id="disk-template" type="text/x-handlebars-template">
-
+      <div id="disk">
+        <ul>
+          <li> {{ title }} </li>
+          <li> {{ author }} </li>
+          <li> {{ genre }} </li>
+          <li> {{ year }} </li>
+        </ul>
+      </div>
     </script>
-
-    <div id="disk">
-      <ul>
-        <li> {{ title }} </li>
-        <li> {{ author }} </li>
-        <li> {{ genre }} </li>
-        <li> {{ year }} </li>
-      </ul>
-    </div>
-
+    <main></main>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
