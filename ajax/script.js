@@ -10,7 +10,7 @@ function getData(){
       "year" : year
     },
     success: function(data){
-      // console.log(data);
+      console.log(data);
       var template = $("#disk-template").html();
       var compiled = Handlebars.compile(template);
       var target = $("#disk ul");
