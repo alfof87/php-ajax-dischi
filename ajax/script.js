@@ -37,7 +37,7 @@ function getData(){
     var target = $("main");
     for (var i = 0; i < data.length; i++) {
       var cd = data[i];
-      // console.log(data[i]);
+      console.log(data[i]);
       var diskHTML = compiled(cd);
       target.append(diskHTML);
     }
