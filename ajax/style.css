@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+}
+h4{
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+h5, h6{
+  color: grey;
+  text-align: center;
+  margin: 10px;
+}
+img{
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  transform: translate(+15px, 0);
+}
+#disk{
+  width: 200px;
+  height: 350px;
+  background-color: black;
+  margin: 50px;
+  float: left;
+}

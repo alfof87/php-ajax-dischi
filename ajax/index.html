@@ -5,18 +5,17 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
     <script id="disk-template" type="text/x-handlebars-template">
       <div id="disk">
-        <ul>
-          <li> {{ title }} </li>
-          <li> {{ author }} </li>
-          <li> {{ genre }} </li>
-          <li> {{ year }} </li>
-        </ul>
+          <img src="{{ poster }}" alt="">
+          <h4> {{ title }} </h4>
+          <h5> {{ author }} </h5>
+          <h5> {{ genre }} </h5>
+          <h6> {{ year }} </h6>        
       </div>
     </script>
     <main></main>
